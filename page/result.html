@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../img/CA.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICAI Foundation Result - December 2023</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader Section -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Loading result...</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container" style="display: none;">
+    <header>
+      <img src="../img/CA.png" alt="ICAI Logo" class="logo" />
+      <div>
+        <p class="inst-name">The Institute of Chartered Accountants of India</p>
+        <p class="exam">Examination Results, December 2023</p>
+      </div>
+    </header>
+
+    <main>
+      <a href="../index.html" class="logout"><p>Logout</p></a>
+      <h2>Foundation - Result, December 2023</h2>
+
+      <div class="top-bar">
+        <div class="status-box">
+          <div class="result-status">UNSUCCESSFUL</div>
+        </div>
+
+        <div class="roll">
+          <div class="rollkabox">
+            <strong>ROLL Number</strong>
+            <div>
+              <p class="roll-box">856613</p>
+            </div>
+          </div>
+
+          <div class="namekabox">
+            <strong>NAME</strong>
+            <div>
+              <p class="name-box">KANAME ABHISHEK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>PAPER</th>
+            <th>SUBJECT</th>
+            <th>MARKS OBTAINED</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paper 1</td>
+            <td>Principles and Practice of Accounting</td>
+            <td>091</td>
+          </tr>
+          <tr>
+            <td>Paper 2</td>
+            <td>Business Laws & Business Correspondence and Reporting</td>
+            <td>038</td>
+          </tr>
+          <tr>
+            <td>Paper 3</td>
+            <td>Business Mathematics and Logical Reasoning & Statistics</td>
+            <td>072</td>
+          </tr>
+          <tr>
+            <td>Paper 4</td>
+            <td>Business Economics & Business and Commercial Knowledge</td>
+            <td>087</td>
+          </tr>
+          <tr class="total-row">
+            <td colspan="2"><strong>Total</strong></td>
+            <td><strong>288</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bottom-result">
+        <strong>Result:</strong> <span class="fail">FAIL</span>
+      </div>
+    </main>
+
+    <footer>
+      <div class="disclaimer">
+        <p>
+          Disclaimer: The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of data transmission via the Internet or their downloading or printing by the user. 
+          No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. 
+          Users are not permitted to change, modify or prepare derivative works from the content of this site. 
+          For any clarifications / confirmation please address your enquiries to Additional Secretary (Exams), 
+          The Institute of Chartered Accountants of India, 'ICAI BHAWAN', Post Box No. 7112, Indraprastha Marg, New Delhi - 110 002.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Loader Script -->
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const loader = document.getElementById("loader");
+        loader.classList.add("fade-out");
+        setTimeout(() => {
+          loader.style.display = "none";
+          document.querySelector(".container").style.display = "block";
+        }, 500); // smooth fade-out
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
